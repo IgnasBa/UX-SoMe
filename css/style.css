@@ -1,0 +1,427 @@
+
+* {
+    margin: 0;
+}
+#startScreen {
+    width: 100%;
+    height: auto;
+}
+#background {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+      -webkit-animation: slide 20s linear infinite;
+}
+#points {
+    font-size: 1.5em;
+    font-weight: 600;
+    visibility: hidden;
+}
+#points2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    visibility: hidden;
+}
+li{
+}
+
+#logo {
+    width: 30%;
+    height: auto;
+    float: right;
+}
+#gymHeading {
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    background: yellow;
+    border: 2px solid black;
+    display: inline-block;
+    line-height: 7em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+   
+}
+#finish{
+     position: absolute;
+    width: 60%;
+    height: 22%;
+    background: yellow;
+    border: 2px solid black;
+    display: inline-block;
+    line-height: 7em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+     visibility: hidden;
+}
+#finish2{
+     position: absolute;
+    width: 60%;
+    height: 11%;
+    background: yellow;
+    border: 2px solid black;
+    display: inline-block;
+    line-height: 7em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+     visibility: hidden;
+}
+h2{
+    font-family: aviano-future, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5em;
+    margin-left: 10px;
+}
+#introduction {
+    position: absolute;
+    width: 60%;
+    height: 45%;
+    background: white;
+    border: 2px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15%;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pointsDiv{
+    background: #c265cf;
+    border: 2px solid black;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    width: 10%;
+    position: absolute;
+    margin-left: 85%;
+    padding: 15px 32px;
+    visibility: hidden;
+    margin-top: 1%;
+}
+#pointsDiv2{
+    background: #00fffb;
+    border: 2px solid black;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    width: 10%;
+    position: absolute;
+    margin-left: 2%;
+    padding: 15px 32px;
+    visibility: hidden;
+    margin-top: 1%;
+}
+#chooseLevel{
+    position: absolute;
+    width: 40%;
+    height: 8%;
+    background: white;
+    border: 2px solid black;
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top: 15%;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#easy{
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    background: white;
+    border: 2px solid black;
+    margin-left: 35%;
+    margin-top: 22%;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#hard{
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    background: white;
+    border: 2px solid black;
+    margin-left: 35%;
+    margin-top: 32%;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#medium{
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    background: white;
+    border: 2px solid black;
+    margin-left: 35%;
+    margin-top: 27%;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#playlistHype{
+    display: none;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 21%;
+    margin-left: 25%;
+}
+#playlistMotivation{
+    display: none;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 31%;
+    margin-left: 35%;
+}
+#playlistDale{
+    display: none;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 21%;
+    margin-left: 45%;
+}
+#playlistSummer{
+    display: none;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 31%;
+    margin-left: 55%;
+}
+#playlistPower{
+    display: none;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 21%;
+    margin-left: 65%;
+}
+#arrow{
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 85%;
+    border: 2px solid black;
+}
+#arrow:active {
+  transform: translateY(4px);
+    
+}
+#start:active {
+  transform: translateY(4px);
+    
+}
+#start2:active {
+  transform: translateY(4px);
+    
+}
+#playlistHype:active {
+  transform: translateY(4px);
+}
+#playlistMotivation:active {
+  transform: translateY(4px);
+}
+#playlistDale:active {
+  transform: translateY(4px);
+}
+#playlistSummer:active {
+  transform: translateY(4px);
+}
+#playlistPower:active {
+  transform: translateY(4px);
+}
+#safeTimer{
+    visibility: hidden;
+    background-color: yellow;
+  border: 2px solid black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3em;
+    font-family: aviano-future, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 44%;
+    width: 10%;
+}
+
+#easy:hover {background-color: yellow}
+#medium:hover {background-color: yellow}
+#hard:hover {background-color: yellow}
+
+h1 {
+    text-align: center;
+    vertical-align: middle;
+    font-family: aviano-future, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 6em;
+}
+button {
+    visibility: hidden;
+    background-color: yellow;
+  border: 2px solid black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3em;
+    font-family: aviano-future, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 44.3%;
+}
+
+@keyframes shake {
+    0% {
+        transform: skewX(-15deg);
+    }
+    5% {
+        transform: skewX(15deg);
+    }
+    10% {
+        transform: skewX(-15deg);
+    }
+    15% {
+        transform: skewX(15deg);
+    }
+    20% {
+        transform: skewX(0deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
+.apply-shake {
+    animation: .8s shake infinite alternate;
+}
+.list {
+    animation: createBox 10s;
+}
+.list2 {
+    animation: createBox 10s;
+}
+@keyframes createBox {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* slider */
+/* The switch - the box around the slider */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+    margin-left: 17em;
+    top: 4px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+ 
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+    
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2193F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
