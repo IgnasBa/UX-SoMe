@@ -6,57 +6,82 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/oqc6puq.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-</head><body>
- <div id="startScreen">
-  <div id="main">
-      <img src="img/background.png" alt="background image" id="background">
-      <img src="img/logo.png" alt="logo" id="logo">
-      <img src="img/arrow.jpg" id="arrow" alt="arrow">
-      <div id="gymHeading"><h1>INTERACTIVE GYM</h1></div>
-      <div id="finish"><h1>Congratulations!<br> Warmup done</h1></div>
-      <div id="finish2"><h1>Warmup failed</h1></div>
-      <div id="introduction"><p><b>Welcome!</b> <br>Everyone knows that the most important part of your work-
-out is the <b>WARM UP!</b> This game will help you to do your warm
-up properly to avoid any injures later.<br>
-<b>INSTRUCTIONS:</b> <br>
-On the wall you will see coloured circles, which you need to
-touch while they are still visible. When you touch the circle
-you get one point from each, which will be counted in the
-right screen corner. The more points you have the better
-warm up you did.<br>
-You have to choose a difficulty level according to your
-needs. The higher level you choose the faster circles will
-come and disappear.<br>
-<b>TO START THE GAME YOU NEED:</b> <br>
-Choose your current activity level;<br>
-Choose your favourite Playlist;<br>
-Push START button;<br>
-P.S. question mark is help for you during the game;</p></div>
-     <div id="chooseLevel"><h2>Choose the level</h2></div>
-     <div id="easy"><h2>Easy</h2></div>
-     <div id="medium"><h2>Medium</h2></div>
-     <div id="hard"><h2>Hard</h2></div>
-     <img src="img/PlaylistHype.jpg" id="playlistHype" alt="Motivation playlist">
-     <img src="img/PlaylistMotivation.jpg" id="playlistMotivation" alt="Motivation playlist">
-     <img src="img/PlaylistDale.png" id="playlistDale" alt="Dale Reggeaton playlist">
-     <img src="img/PlaylistSummer.jpg" id="playlistSummer" alt="Summer playlist">
-     <img src="img/PlaylistPower.jpg" id="playlistPower" alt="Power playlist">
-      <ul id="elementArea"></ul>
-      <ul id="elementArea2"></ul>
-      <div id=pointsDiv><p id="points">Score: 0</p></div>
-      <div id=pointsDiv2><p id="points2">Score: 0</p></div>
-      <div id="safeTimer">
-<p id="safeTimerDisplay">15:00</p>
-</div>
-      <button id="start">Start</button>
-      <button id="start2">Start</button>
-      <div id="slider2" >
-      <h2>2 Player</h2>
-      <label class="switch">
-  <input id="inputs" type="checkbox">
-  <span class="slider"></span>
-</label></div>
-  </div>  </div>
-<script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="startScreen">
+        <div id="main">
+            <img src="img/background.png" alt="background image" class="background" id="background">
+            <img src="img/backgroundClear.jpg" alt="background image clear" class="background" id="backgroundClear">
+            <img src="img/backgroundCloudy.png" alt="background image cloudy" class="background" id="backgroundCloudy">
+            <img src="img/backgroundRain.jpg" alt="background image rain" class="background" id="backgroundRain">
+            <img src="img/backgroundSnow.png" alt="background image snow" class="background" id="backgroundSnow">
+            <img src="img/backgroundThunderstorm.jpg" alt="background image thunderstorm" class="background" id="backgroundThunderstorm">
+            <img src="img/logo.png" alt="logo" id="logo">
+            <img src="img/arrow.jpg" id="arrow" alt="arrow">
+            <audio id="dont" src="audio/dont_call_me_up.mp3"></audio>
+            <audio volume="0.1" id="nonstop" src="audio/Nonstop.mp3"></audio>
+            <audio id="mind" src="audio/in_my_mind.mp3"></audio>
+            <audio id="bap" src="audio/bap.mp3"></audio>
+            <audio  id="bip" src="audio/bip.mp3"></audio>
+            
+            <div id="gymHeading">
+                <h1>INTERACTIVE GYM</h1>
+            </div>
+            <div id="finish">
+                <h1>Congratulations!<br> Warmup done</h1>
+            </div>
+            <div id="finish2" class="scale-up-center">
+                <h1>Warmup failed</h1>
+            </div>
+            <div id="introduction">
+                <p id="text"><b>WELCOME!</b> <br>Play the game which will help you to <b>WARM UP! </b><br><br>
+                    <b>INSTRUCTIONS:</b></p> <p> 
+                   &#9679; Select game difficulty*, choose your playlist and if you want play multiplayer.<br>
+                    &#9679; Touch colored bubbles on the wall to earn points.<br>
+                   &#9679; Points will be counted in the right screen corner. <br>
+                    &#9679; If you miss a bubble, you loose.<br>
+                    *Choose a level according to your needs. The higher level you choose the faster circles will come and disappear.</p>
+            </div>
+            <div id="chooseLevel" class="scale-up-center">
+                <h2>Choose the level</h2>
+            </div>
+            <div id="easy" class="scale-up-center">
+                <h2>Easy</h2>
+            </div>
+            <div id="medium" class="scale-up-center">
+                <h2>Medium</h2>
+            </div>
+            <div id="hard" class="scale-up-center">
+                <h2>Hard</h2>
+            </div>
+            <img src="img/PlaylistHype.jpg" id="playlistHype" alt="Motivation playlist" class="scale-up-center">
+            <img src="img/PlaylistMotivation.jpg" id="playlistMotivation" alt="Motivation playlist" class="scale-up-center">
+            <img src="img/PlaylistDale.png" id="playlistDale" alt="Dale Reggeaton playlist" class="scale-up-center">
+            <img src="img/PlaylistSummer.jpg" id="playlistSummer" alt="Summer playlist" class="scale-up-center">
+            <img src="img/PlaylistPower.jpg" id="playlistPower" alt="Power playlist" class="scale-up-center">
+            <ul id="elementArea"></ul>
+            <ul id="elementArea2"></ul>
+            <div id=pointsDiv>
+                <p id="points">Score: 0</p>
+            </div>
+            <div id=pointsDiv2>
+                <p id="points2">Score: 0</p>
+            </div>
+            <div id="safeTimer">
+                <p id="safeTimerDisplay">00:30</p>
+            </div>
+            <button id="start">Start</button>
+            <button id="start2">Start</button>
+            <div id="slider2">
+                <h2>2 Player</h2>
+                <label class="switch">
+                    <input id="inputs" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
